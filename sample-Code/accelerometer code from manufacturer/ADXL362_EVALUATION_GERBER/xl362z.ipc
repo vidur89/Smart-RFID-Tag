@@ -1,0 +1,164 @@
+P  JOB   C:/.../ADI/adxl362/worklib/adxl362z/physical/xl362z.brd                
+P  CODE  00                                                                     
+P  UNITS CUST 0                                                                 
+P  TITLE C:/.../ADI/adxl362/worklib/adxl362z/physical/xl362z.brd                
+P  NUM   001                                                                    
+P  REV   A                                                                      
+P  VER IPC-D-356A                                                               
+C                                                                               
+C  IPC-D-356 Ouptut File from Allegro                                           
+C  IPC File Date: Fri Oct 28 17:36:14 2011                                      
+C  Login Name:    GuyL                                                          
+C                                                                               
+C                                                                               
+C  Board File:             xl362z.brd                                           
+C  Design Rule Status:     UP TO DATE                                           
+C  Unit of Measure:        mils                                                 
+C  Decimal Place Accuracy: 1                                                    
+C  Number of etch Layers:  2                                                    
+C  Board Thickness(mils):  62.000000                                            
+C  Drawing Extents(mils):  0  0  90000  120000                                  
+C                                                                               
+C                                                                               
+C  BOARD LAYER INFORMATION                                                      
+C                                                                               
+C     Layer      Layer            Layer             Film  Layer                 
+C     Name       Material         Type              Type  Number                
+C  ---------------------------------------------------------                    
+C  TOP           COPPER           CONDUCTOR         POS     1                   
+C  BOTTOM        COPPER           CONDUCTOR         POS     2                   
+C                                                                               
+C                                                                               
+C  PADSTACK INFORMATION                                                         
+C                                                                               
+C     Padstack          First     Last                                          
+C     Name              Layer     Layer     Width     Height                    
+C  ---------------------------------------------------------                    
+C  SM080_030MM          TOP       TOP             354       157                 
+C  SM092_030MM          TOP       TOP             404       157                 
+C  PAD150C120D          TOP       BOTTOM         1750      1750                 
+C  SM050_030MM          TOP       TOP             240       161                 
+C  SM075_030MM          TOP       TOP             339       161                 
+C  SM030_070MM          TOP       TOP             177       335                 
+C  SM078_156MM          TOP       TOP             366       673                 
+C  SM240_240MM          TOP       TOP            1004      1004                 
+C  PAD150C_120D         TOP       BOTTOM         1750      1750                 
+C  OBL055X035_D025      TOP       BOTTOM          650       500                 
+C  SM115_055MM          TOP       TOP             512       276                 
+C  PAD250C125D          TOP       BOTTOM         2650      2650                 
+C  OB30X40D20           TOP       BOTTOM          600       700                 
+C  SM095_145MM          TOP       TOP             413       650                 
+C  PAD62SQ32D           TOP       BOTTOM          900       900                 
+C  SMD80_24             TOP       TOP             850       290                 
+C  SM057_050            TOP       TOP             650       580                 
+C  HOLE109P             TOP       BOTTOM         2200      2200                 
+C  PAD35CIR25D          TOP       BOTTOM          630       630                 
+C  PAD60SQ36D           TOP       BOTTOM          880       880                 
+C  PAD62CIR32D          TOP       BOTTOM          900       900                 
+C  SM180_125MM          TOP       TOP             768       551                 
+C  SM55_65MM            TOP       TOP             276       315                 
+C  SM028_024            TOP       TOP             340       300                 
+C  PAD75C43D            TOP       BOTTOM         1030      1030                 
+C  SM016_052            TOP       TOP             200       570                 
+C  SM205_60MM           TOP       TOP             335       906                 
+C  SMD50_25             TOP       TOP             550       300                 
+C  SM155_045MM          TOP       TOP             669       236                 
+C  SM067_093            TOP       TOP             770      1030                 
+C  SM012_50             TOP       TOP             160       540                 
+C  SM105_050MM          TOP       TOP             472       256                 
+C  SMD162BY68           TOP       TOP            1720       780                 
+C  SMD32_17             TOP       TOP             420       270                 
+C  SMD65REC13           TOP       TOP             750       180                 
+C  PAD60CIR36D          TOP       BOTTOM          880       880                 
+C  SM030_034            TOP       TOP             360       400                 
+C  VIA26                TOP       BOTTOM          500       500                 
+C  40X30                TOP       TOP             460       360                 
+C  VIA20C10D            TOP       BOTTOM          480       480                 
+C  PAD90CIR70D          TOP       BOTTOM         1180      1180                 
+C  QFN-28               TOP       TOP             374       204                 
+C  SM067_053            TOP       TOP             730       590                 
+C  SM055_080            TOP       TOP             650       900                 
+C  SM021_056            TOP       TOP             277       623                 
+C  SM023_039            TOP       TOP             290       450                 
+C  VIA34C20D            TOP       BOTTOM          680       680                 
+C  RT_70X100            TOP       TOP             800      1100                 
+C  SMD20_17             TOP       TOP             250       220                 
+C  SMD60_55             TOP       TOP             650       600                 
+C                                                                               
+C                                                                               
+C  ****************************************                                     
+C      SIGNAL PINS & VIAS ON THE BOARD                                          
+C  ****************************************                                     
+C                                                                               
+327SCLK             U1    -4          A01X+043493Y+073053X0364Y0118     S1      
+317SCLK             VIA   -    MD0100PA00X+043100Y+073050X0200Y         S3      
+317SCLK             P2    -2    D0430PA00X+045500Y+075000X0750Y         S3      
+327MOSI             U1    -6          A01X+043803Y+072748X0315Y0118R090 S1      
+317MOSI             VIA   -    MD0100PA00X+043700Y+072400X0200Y         S3      
+317MOSI             P2    -3    D0430PA00X+045500Y+074000X0750Y         S3      
+327MISO             U1    -7          A01X+044000Y+072748X0315Y0118R090 S1      
+317MISO             VIA   -    MD0100PA00X+044000Y+072400X0200Y         S3      
+317MISO             P2    -4    D0430PA00X+045500Y+073000X0750Y         S3      
+317INT2             P1    -4    D0430PA00X+042500Y+073000X0750Y         S3      
+327INT2             U1    -9          A01X+044507Y+072856X0364Y0118     S1      
+317INT1             P1    -5    D0430PA00X+042500Y+072000X0750Y         S3      
+327INT1             U1    -11         A01X+044507Y+073250X0364Y0118     S1      
+317VDDIO            P1    -2    D0430PA00X+042500Y+075000X0750Y         S3      
+327VDDIO            C1    -1   M      A01X+043750Y+074730X0300Y0340R090 S1      
+327VDDIO            U1    -1          A01X+043493Y+073644X0364Y0118     S1      
+327CS               U1    -8          A01X+044197Y+072748X0315Y0118R090 S1      
+317CS               VIA   -    MD0100PA00X+044300Y+072400X0200Y         S3      
+317CS               P2    -5    D0430PA00X+045500Y+072000X0750Y         S3      
+327VS               C2    -2   M      A01X+044250Y+074730X0300Y0340R270 S1      
+317VS               P1    -1    D0430PA00X+042500Y+076000X0750Y         S3      
+327VS               C3    -1   M      A01X+044000Y+076278X0670Y0530R090 S1      
+327VS               U1    -14         A01X+044197Y+073752X0315Y0118R090 S1      
+317GND              H1    -1   MD1200PA00X+041100Y+071100X1500Y         S3      
+317GND              VIA   -    MD0100PA00X+043250Y+071625X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+045750Y+071125X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+041000Y+072500X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+041000Y+073500X0200Y         S3      
+317GND              P1    -3   MD0430PA00X+042500Y+074000X0750Y         S3      
+317GND              VIA   -    MD0100PA00X+044500Y+074375X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+043000Y+073500X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+043000Y+074500X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+047250Y+072500X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+041000Y+075500X0200Y         S3      
+317GND              H4    -1   MD1200PA00X+041100Y+076900X1500Y         S3      
+317GND              VIA   -    MD0100PA00X+043000Y+075500X0200Y         S3      
+327GND              C1    -2          A01X+043750Y+075270X0300Y0340R090 S1      
+317GND              VIA   -    MD0100PA00X+043750Y+075650X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+047250Y+075500X0200Y         S3      
+327GND              C3    -2   M      A01X+044000Y+077222X0670Y0530R090 S1      
+327GND              U1    -12  M      A01X+044507Y+073447X0364Y0118     S1      
+327GND              U1    -16         A01X+043803Y+073752X0315Y0118R090 S1      
+317GND              VIA   -    MD0100PA00X+044875Y+074000X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+043375Y+072500X0200Y         S3      
+317GND              H3    -1   MD1200PA00X+046900Y+076900X1500Y         S3      
+317GND              VIA   -    MD0100PA00X+047250Y+073500X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+047250Y+074500X0200Y         S3      
+317GND              H2    -1   MD1200PA00X+046900Y+071100X1500Y         S3      
+317GND              VIA   -    MD0100PA00X+043500Y+077250X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+044500Y+077250X0200Y         S3      
+327GND              C2    -1          A01X+044250Y+075270X0300Y0340R270 S1      
+317GND              VIA   -    MD0100PA00X+044250Y+075650X0200Y         S3      
+317GND              P2    -1   MD0430PA00X+045500Y+076000X0750Y         S3      
+317GND              VIA   -    MD0100PA00X+045000Y+075500X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+044750Y+071625X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+042250Y+071125X0200Y         S3      
+317GND              VIA   -    MD0100PA00X+041000Y+074375X0200Y         S3      
+327GND              U1    -13         A01X+044507Y+073644X0364Y0118     S1      
+C                                                                               
+C  ****************************************                                     
+C      DUMMY NET PINS & VIAS ON THE BOARD                                       
+C  ****************************************                                     
+C                                                                               
+327N/C              U1    -5          A01X+043493Y+072856X0364Y0118     S1      
+327N/C              U1    -3          A01X+043493Y+073250X0364Y0118     S1      
+327N/C              U1    -10         A01X+044507Y+073053X0364Y0118     S1      
+327N/C              U1    -15         A01X+044000Y+073752X0315Y0118R090 S1      
+327N/C              U1    -2          A01X+043493Y+073447X0364Y0118     S1      
+C                                                                               
+C  End-of-Job                                                                   
+C                                                                               
+999                                                                             
