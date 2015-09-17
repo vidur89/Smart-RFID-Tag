@@ -1,0 +1,250 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+--edf=C:\Program Files (x86)\HI-TECH Software\PICC\9.81\dat\en_msgs.txt -cs \
+  -h+xl362_tilt.sym -z -Q16F84 -ol.obj -Mxl362_tilt.map -E1 \
+  -ACONST=00h-0FFhx4 -ACODE=00h-03FFh -ASTRCODE=00h-03FFh \
+  -AENTRY=00h-0FFhx4 -ASTRING=00h-0FFhx4 -ABANK0=0Ch-04Dh -ARAM=0Ch-04Dh \
+  -AABS1=0Ch-04Fh -ACOMMON=04Eh-04Fh -ASFR0=00h-0Bh -ASFR1=080h-0CDh \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pfunctab=CODE \
+  -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=02000h-02003h \
+  -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-03Fh/02100h -peeprom_data=EEDATA \
+  -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  startup.obj xl362_tilt.obj 
+
+Object code version is 3.10
+
+Machine type is 16F84
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+startup.obj     end_init                              F        F        1        8       0
+                reset_vec                             0        0        1        0       0
+xl362_tilt.obj  intentry                              4        4        B        8       0
+                config                             2007     2007        1     400E       0
+                text235                              FB       FB        C        8       0
+                text234                              E1       E1        E        8       0
+                text233                              EF       EF        C        8       0
+                text232                              7C       7C       3C        8       0
+                text231                             111      111        4        8       0
+                text230                              B8       B8       29        8       0
+                maintext                             10       10       6C        8       0
+                cstackBANK0                           C        C       11        C       1
+                bssBANK0                             1D       1D        8        C       1
+                cinit                               107      107        A        8       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CONST          
+
+        CLASS   CODE           
+                end_init                              F        F        1         0
+                intentry                              4        4        B         0
+                reset_vec                             0        0        1         0
+                text235                              FB       FB        C         0
+                text234                              E1       E1        E         0
+                text233                              EF       EF        C         0
+                text232                              7C       7C       3C         0
+                text231                             111      111        4         0
+                text230                              B8       B8       29         0
+                maintext                             10       10       6C         0
+                cinit                               107      107        A         0
+
+        CLASS   STRCODE        
+
+        CLASS   ENTRY          
+
+        CLASS   STRING         
+
+        CLASS   BANK0          
+                cstackBANK0                           C        C       11         1
+                bssBANK0                             1D       1D        8         1
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               4E       4E        2         1
+
+        CLASS   COMMON         
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   BANK1          
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000001  000001         0       0  CODE        2
+                intentry                       000004  000111  000115         8       0  CODE        2
+                cstackBANK0                    00000C  000019  000025         C       1  BANK0       1
+                config                         002007  000001  002008      400E       0  CONFIG      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0025-004D             29           1
+        CODE             0001-0003              3           2
+                         0115-03FF            2EB
+        CONST            0001-0003              3           2
+                         0115-03FF            100
+        EEDATA           2100-213F             40           2
+        ENTRY            0001-0003              3           2
+                         0115-03FF            100
+        IDLOC            2000-2003              4           2
+        RAM              0025-004D             29           1
+        SFR0             0000-000B              C           1
+        SFR1             0080-00CD             4E           1
+        STRCODE          0001-0003              3           2
+                         0115-03FF            2EB
+        STRING           0001-0003              3           2
+                         0115-03FF            100
+
+                                  Symbol Table
+
+??_main               cstackBANK0  001B
+??_myisr              cstackBANK0  000C
+??_spidelay           cstackCOMMON 0000
+??_spistart           cstackCOMMON 0000
+??_spistop            cstackCOMMON 0000
+??_xfer_byte          cstackBANK0  0011
+??_xl362Write         cstackBANK0  0018
+?_main                cstackBANK0  000C
+?_myisr               cstackBANK0  000C
+?_spidelay            cstackBANK0  000C
+?_spistart            cstackBANK0  000C
+?_spistop             cstackBANK0  000C
+?_xfer_byte           cstackBANK0  000C
+?_xl362Write          cstackBANK0  0016
+_CSN                  (abs)        0033
+_CSN_TRIS             (abs)        0433
+_INTF                 (abs)        0059
+_MISO                 (abs)        0030
+_MISO_TRIS            (abs)        0430
+_MOSI                 (abs)        0031
+_MOSI_TRIS            (abs)        0431
+_OPTION_REG           (abs)        0081
+_SCLK                 (abs)        0032
+_SCLK_TRIS            (abs)        0432
+__Habs1               abs1         0000
+__Hbank0              bank0        0000
+__Hbank1              bank1        0000
+__HbssBANK0           bssBANK0     0000
+__Hcinit              cinit        0000
+__Hclrtext            clrtext      0000
+__Hcode               code         0000
+__Hcommon             common       0000
+__Hconfig             config       2008
+__HcstackBANK0        cstackBANK0  0000
+__HcstackCOMMON       cstackCOMMON 0000
+__Heeprom_data        eeprom_data  0000
+__Hend_init           end_init     0010
+__Hfunctab            functab      0000
+__Hidloc              idloc        0000
+__Hinit               init         000F
+__Hintentry           intentry     000F
+__Hmaintext           maintext     0000
+__Hpowerup            powerup      0000
+__Hram                ram          0000
+__Hreset_vec          reset_vec    0001
+__Hsfr0               sfr0         0000
+__Hsfr1               sfr1         0000
+__Hstrings            strings      0000
+__Htext               text         0000
+__Labs1               abs1         0000
+__Lbank0              bank0        0000
+__Lbank1              bank1        0000
+__LbssBANK0           bssBANK0     0000
+__Lcinit              cinit        0000
+__Lclrtext            clrtext      0000
+__Lcode               code         0000
+__Lcommon             common       0000
+__Lconfig             config       2007
+__LcstackBANK0        cstackBANK0  0000
+__LcstackCOMMON       cstackCOMMON 0000
+__Leeprom_data        eeprom_data  0000
+__Lend_init           end_init     000F
+__Lfunctab            functab      0000
+__Lidloc              idloc        0000
+__Linit               init         000F
+__Lintentry           intentry     0004
+__Lmaintext           maintext     0000
+__Lpowerup            powerup      0000
+__Lram                ram          0000
+__Lreset_vec          reset_vec    0000
+__Lsfr0               sfr0         0000
+__Lsfr1               sfr1         0000
+__Lstrings            strings      0000
+__Ltext               text         0000
+__S0                  (abs)        2008
+__S1                  (abs)        0025
+__S2                  (abs)        0000
+__end_of_main         maintext     007C
+__end_of_myisr        text235      0107
+__end_of_spidelay     text234      00EF
+__end_of_spistart     text233      00FB
+__end_of_spistop      text231      0115
+__end_of_xfer_byte    text232      00B8
+__end_of_xl362Write   text230      00E1
+__pbssBANK0           bssBANK0     001D
+__pcstackBANK0        cstackBANK0  000C
+__pcstackCOMMON       cstackCOMMON 0000
+__pintentry           intentry     0004
+__pmaintext           maintext     0010
+__ptext229            text229      0000
+__ptext230            text230      00B8
+__ptext231            text231      0111
+__ptext232            text232      007C
+__ptext233            text233      00EF
+__ptext234            text234      00E1
+__ptext235            text235      00FB
+__ptext236            text236      0000
+__size_of_main        (abs)        0000
+__size_of_myisr       (abs)        0000
+__size_of_spidelay    (abs)        0000
+__size_of_spistart    (abs)        0000
+__size_of_spistop     (abs)        0000
+__size_of_xfer_byte   (abs)        0000
+__size_of_xl362Write  (abs)        0000
+_buffer               bssBANK0     001D
+_exit                 init         000F
+_main                 maintext     0010
+_myisr                text235      00FB
+_spidelay             text234      00E1
+_spistart             text233      00EF
+_spistop              text231      0111
+_xfer_byte            text232      007C
+_xl362Write           text230      00B8
+btemp                 (abs)        004E
+end_of_initialization cinit        010F
+interrupt_function    intentry     0004
+intlevel0             functab      0000
+intlevel1             functab      0000
+intlevel2             functab      0000
+intlevel3             functab      0000
+intlevel4             functab      0000
+intlevel5             functab      0000
+reset_vec             reset_vec    0000
+saved_w               (abs)        004E
+spidelay@delay        cstackBANK0  0010
+start                 init         000F
+start_initialization  cinit        0107
+wtemp0                (abs)        004E
+xfer_byte@byte_in     cstackBANK0  0015
+xfer_byte@byte_out    cstackBANK0  0013
+xfer_byte@count       cstackBANK0  0014
+xl362Write@buf        cstackBANK0  0017
+xl362Write@count      cstackBANK0  001A
+xl362Write@mybyte     cstackBANK0  0019
+xl362Write@regaddr    cstackBANK0  0016
