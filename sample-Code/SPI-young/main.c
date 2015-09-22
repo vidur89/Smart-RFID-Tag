@@ -21,9 +21,9 @@ int main(void) {
 
 
     /* Setting DCO to 16MHZ
-    	• Auxiliary clock (ACLK), sourced either from a 32768-Hz watch crystal or the internal LF oscillator (4-20kHZ).
-		• Main clock (MCLK), the system clock used by the CPU.
-		• Sub-Main clock (SMCLK), the sub-system clock used by the peripheral modules.
+    	?Auxiliary clock (ACLK), sourced either from a 32768-Hz watch crystal or the internal LF oscillator (4-20kHZ).
+		?Main clock (MCLK), the system clock used by the CPU.
+		?Sub-Main clock (SMCLK), the sub-system clock used by the peripheral modules.
     */
 
     DCOCTL = 0;		// set to lowest speed for safety before changing
@@ -48,17 +48,22 @@ int main(void) {
 
 	putS("Hello ! \r\n");
 
-	writeByte(0x20, 100);
+	writeByte(0x20, 50);
 	writeByte(0x21, 0);		// Set Activity Threshould
 
-	writeByte(0x2d, 2);		// Measurement mode
-	writeByte(0x2a, 0x10);	// INT1 pin is active high, maps the activity status to INT1 pin.
-	writeByte(0x27, 0x03);  // activity detection in referenced mode and activity Enable
+	writeByte(0x23, 50);
+	writeByte(0x24, 0);		// Set InActivity Threshould
 
+
+	writeByte(0x2a, BIT6);	// INT1 pin is active high, maps the activity status to INT1 pin.
+	writeByte(0x27, 0x3f);  // activity detection in referenced mode and activity Enable
+
+	writeByte(0x2d, BIT3 | BIT2 | BIT1);		// Measurement mode and wakeup & Autosleep
+//	writeByte(0x2d, 2);		// Measurement mode and wakeup & Autosleep
 
 
 	P1DIR &= ~BIT0;		// P1.0 INPUT
-	P1IES &= ~BIT0;      // P1.0 Hi/lO edge
+	P1IES &= ~BIT0;      // P1.0   1 = high-to-low edge, 0 = low-to-high edge
 	P1IFG &= ~BIT0;		// P1.0 IFG cleared
 	P1IE  |= BIT0;		// P1.0 IRQ ENABLE
 
