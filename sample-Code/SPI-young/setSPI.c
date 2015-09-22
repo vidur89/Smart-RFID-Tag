@@ -13,10 +13,10 @@
 for SPI to Acclerometer ADXL362
  
   
-• 7- or 8-bit data length
-• LSB-first or MSB-first data transmit and receive
-• 3-pin and 4-pin SPI operation
-• Master or slave modes
+?7- or 8-bit data length
+?LSB-first or MSB-first data transmit and receive
+?3-pin and 4-pin SPI operation
+?Master or slave modes
 
 Wire connection MSP430 <-> ADXL362
 
