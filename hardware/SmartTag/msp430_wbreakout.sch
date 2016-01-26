@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -9172,13 +9172,6 @@ Source: www.kingbright.com</description>
 <label x="88.9" y="124.46" size="0.8128" layer="91" ratio="31" xref="yes"/>
 </segment>
 </net>
-<net name="P2.3/NC" class="0">
-<segment>
-<pinref part="MCU1" gate="G$1" pin="11"/>
-<wire x1="83.82" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
-<label x="88.9" y="121.92" size="0.8128" layer="91" ratio="31" xref="yes"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="5"/>
@@ -9331,6 +9324,11 @@ Source: www.kingbright.com</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="180.34" x2="111.76" y2="180.34" width="0.1524" layer="91"/>
 <label x="111.76" y="180.34" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="MCU1" gate="G$1" pin="11"/>
+<wire x1="83.82" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
+<label x="88.9" y="121.92" size="0.8128" layer="91" ratio="31" xref="yes"/>
 </segment>
 </net>
 </nets>

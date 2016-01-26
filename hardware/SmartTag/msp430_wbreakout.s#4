@@ -7198,7 +7198,7 @@ IC-11297</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
 </classes>
 <parts>
@@ -7224,6 +7224,8 @@ IC-11297</description>
 <part name="BATT" library="adafruit" deviceset="CR2032" device="SMT"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="JP7" library="pinhead" deviceset="PINHD-1X4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7246,7 +7248,7 @@ IC-11297</description>
 <instance part="R1" gate="G$1" x="53.34" y="35.56"/>
 <instance part="SUPPLY3" gate="GND" x="45.72" y="20.32"/>
 <instance part="JP2" gate="G$1" x="124.46" y="38.1"/>
-<instance part="JP3" gate="G$1" x="124.46" y="25.4"/>
+<instance part="JP3" gate="G$1" x="144.78" y="38.1"/>
 <instance part="U1" gate="G$1" x="60.96" y="86.36"/>
 <instance part="P+3" gate="VCC" x="91.44" y="96.52"/>
 <instance part="SUPPLY4" gate="GND" x="91.44" y="76.2"/>
@@ -7255,6 +7257,8 @@ IC-11297</description>
 <instance part="BATT" gate="G$1" x="127" y="162.56"/>
 <instance part="P+4" gate="VCC" x="139.7" y="162.56" rot="R270"/>
 <instance part="SUPPLY1" gate="GND" x="119.38" y="160.02"/>
+<instance part="JP6" gate="A" x="116.84" y="20.32" rot="MR0"/>
+<instance part="JP7" gate="A" x="152.4" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -7320,6 +7324,11 @@ IC-11297</description>
 <wire x1="132.08" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 <junction x="132.08" y="162.56"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="A" pin="4"/>
+<wire x1="119.38" y1="17.78" x2="127" y2="17.78" width="0.1524" layer="91"/>
+<label x="127" y="17.78" size="0.8128" layer="91" xref="yes"/>
 </segment>
 </net>
 <net name="P1.0" class="0">
@@ -7487,6 +7496,11 @@ IC-11297</description>
 <wire x1="129.54" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <label x="129.54" y="83.82" size="0.8128" layer="91" rot="MR180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP7" gate="A" pin="4"/>
+<wire x1="149.86" y1="17.78" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
+<label x="142.24" y="17.78" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="P1.6" class="0">
 <segment>
@@ -7511,6 +7525,11 @@ IC-11297</description>
 <pinref part="JP4" gate="A" pin="3"/>
 <wire x1="121.92" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
 <label x="129.54" y="81.28" size="0.8128" layer="91" rot="MR180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="A" pin="3"/>
+<wire x1="119.38" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
+<label x="127" y="20.32" size="0.8128" layer="91" xref="yes"/>
 </segment>
 </net>
 <net name="P2.5/NC" class="0">
@@ -7569,6 +7588,11 @@ IC-11297</description>
 <wire x1="121.92" y1="162.56" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="JP7" gate="A" pin="1"/>
+<wire x1="149.86" y1="25.4" x2="142.24" y2="25.4" width="0.1524" layer="91"/>
+<label x="142.24" y="25.4" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+</segment>
 </net>
 <net name="RF1P" class="0">
 <segment>
@@ -7580,6 +7604,13 @@ IC-11297</description>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="40.64" x2="114.3" y2="40.64" width="0.1524" layer="91"/>
 <label x="114.3" y="40.64" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="A" pin="1"/>
+<wire x1="119.38" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="25.4" x2="127" y2="25.4" width="0.1524" layer="91"/>
+<label x="127" y="25.4" size="0.8128" layer="91" xref="yes"/>
 </segment>
 </net>
 <net name="RF1N" class="0">
@@ -7593,6 +7624,11 @@ IC-11297</description>
 <wire x1="121.92" y1="38.1" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
 <label x="114.3" y="38.1" size="0.8128" layer="91" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP6" gate="A" pin="2"/>
+<wire x1="127" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
+<label x="127" y="22.86" size="0.8128" layer="91" xref="yes"/>
+</segment>
 </net>
 <net name="RF2N" class="0">
 <segment>
@@ -7602,8 +7638,13 @@ IC-11297</description>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="25.4" x2="114.3" y2="25.4" width="0.1524" layer="91"/>
-<label x="114.3" y="25.4" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+<wire x1="142.24" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
+<label x="134.62" y="38.1" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="A" pin="3"/>
+<wire x1="149.86" y1="20.32" x2="142.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="142.24" y="20.32" size="0.8128" layer="91" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="RF2P" class="0">
@@ -7614,8 +7655,13 @@ IC-11297</description>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="27.94" x2="114.3" y2="27.94" width="0.1524" layer="91"/>
-<label x="114.3" y="27.94" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+<wire x1="142.24" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<label x="134.62" y="40.64" size="0.8128" layer="91" rot="MR0" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="A" pin="2"/>
+<wire x1="149.86" y1="22.86" x2="142.24" y2="22.86" width="0.1524" layer="91"/>
+<label x="142.24" y="22.86" size="0.8128" layer="91" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="P1.1" class="0">

@@ -1873,7 +1873,7 @@ design rules under a new name.</description>
 </element>
 <element name="LED1" library="led" package="CHIP-LED0805" value="" x="-7.62" y="0"/>
 <element name="R3" library="rcl" package="R0805" value="470k" x="-7.62" y="-6.35"/>
-<element name="JP8" library="pinhead" package="1X03" value="" x="-5.08" y="-13.97"/>
+<element name="JP8" library="pinhead" package="1X03" value="" x="3.302" y="11.811" rot="R270"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -1941,11 +1941,11 @@ design rules under a new name.</description>
 <signal name="P1.2/TX">
 <contactref element="MCU1" pad="4"/>
 <contactref element="JP1" pad="6"/>
-<wire x1="8.5299" y1="32.725" x2="7.325" y2="32.725" width="0.254" layer="1"/>
-<wire x1="7.325" y1="32.725" x2="6.35" y2="31.75" width="0.254" layer="1"/>
-<wire x1="6.35" y1="31.75" x2="6.35" y2="25.4" width="0.254" layer="1"/>
-<wire x1="6.35" y1="25.4" x2="5.08" y2="24.13" width="0.254" layer="1"/>
-<wire x1="3.302" y1="24.13" x2="5.08" y2="24.13" width="0.254" layer="1"/>
+<wire x1="3.302" y1="24.13" x2="3.81" y2="24.13" width="0.254" layer="1"/>
+<wire x1="3.81" y1="24.13" x2="5.334" y2="25.654" width="0.254" layer="1"/>
+<wire x1="5.334" y1="25.654" x2="5.334" y2="30.861" width="0.254" layer="1"/>
+<wire x1="5.334" y1="30.861" x2="7.198" y2="32.725" width="0.254" layer="1"/>
+<wire x1="7.198" y1="32.725" x2="8.5299" y2="32.725" width="0.254" layer="1"/>
 </signal>
 <signal name="P1.3/NC">
 <contactref element="MCU1" pad="5"/>
@@ -1989,17 +1989,25 @@ design rules under a new name.</description>
 <signal name="P2.0">
 <contactref element="MCU1" pad="8"/>
 <contactref element="JP8" pad="1"/>
-<wire x1="-7.62" y1="-13.97" x2="8.5299" y2="30.125" width="0" layer="19" extent="1-1"/>
+<wire x1="8.5299" y1="30.125" x2="7.9" y2="30.125" width="0.254" layer="1"/>
+<wire x1="7.9" y1="30.125" x2="6.985" y2="29.21" width="0.254" layer="1"/>
+<wire x1="6.985" y1="29.21" x2="6.985" y2="18.034" width="0.254" layer="1"/>
+<wire x1="6.985" y1="18.034" x2="3.302" y2="14.351" width="0.254" layer="1"/>
 </signal>
 <signal name="P2.1">
 <contactref element="MCU1" pad="9"/>
 <contactref element="JP8" pad="2"/>
-<contactref element="JP8" pad="3"/>
-<wire x1="-2.54" y1="-13.97" x2="8.5299" y2="29.475" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.08" y1="-13.97" x2="-2.54" y2="-13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="3.302" y1="11.811" x2="4.191" y2="11.811" width="0.254" layer="1"/>
+<wire x1="4.191" y1="11.811" x2="7.62" y2="15.24" width="0.254" layer="1"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="29.21" width="0.254" layer="1"/>
+<wire x1="7.62" y1="29.21" x2="7.885" y2="29.475" width="0.254" layer="1"/>
+<wire x1="7.885" y1="29.475" x2="8.5299" y2="29.475" width="0.254" layer="1"/>
 </signal>
 <signal name="P2.2">
 <contactref element="MCU1" pad="10"/>
+<contactref element="JP8" pad="3"/>
+<wire x1="8.5299" y1="28.8251" x2="8.5299" y2="14.4989" width="0.254" layer="1"/>
+<wire x1="8.5299" y1="14.4989" x2="3.302" y2="9.271" width="0.254" layer="1"/>
 </signal>
 <signal name="DVSS">
 <contactref element="C2" pad="2"/>
@@ -2144,12 +2152,7 @@ design rules under a new name.</description>
 <via x="21.59" y="19.05" extent="1-16" drill="0.6"/>
 <via x="21.59" y="29.718" extent="1-16" drill="0.6"/>
 <contactref element="LED1" pad="C"/>
-<wire x1="21.59" y1="29.718" x2="22.78" y2="30.75" width="0" layer="19" extent="1-1"/>
-<wire x1="17.78" y1="20.32" x2="21.59" y2="27.94" width="0" layer="19" extent="1-16"/>
-<wire x1="21.59" y1="19.05" x2="17.78" y2="20.32" width="0" layer="19" extent="16-16"/>
-<wire x1="16.51" y1="4.48" x2="16.51" y2="19.05" width="0" layer="19" extent="1-16"/>
-<wire x1="3.302" y1="26.67" x2="16.51" y2="19.05" width="0" layer="19" extent="16-16"/>
-<wire x1="-7.62" y1="1.05" x2="8.89" y2="0.635" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="0.635" x2="-7.62" y2="1.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RF1P">
 <contactref element="RF1" pad="1"/>
