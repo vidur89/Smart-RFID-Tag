@@ -2025,9 +2025,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="R2" library="rcl" package="R0805" value="270k" x="13.97" y="8.89" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.7" y="11.1125" size="0.8128" layer="25" font="vector" rot="SR0"/>
 </element>
-<element name="RF1" library="NXP_60_26022015" package="SOT902-1/2/3" value="SL3S4001" x="16.51" y="6.35" smashed="yes">
-<attribute name="NAME" x="13.303" y="5.453" size="0.8128" layer="25" font="vector"/>
-</element>
+<element name="RF1" library="NXP_60_26022015" package="SOT902-1/2/3" value="SL3S4001" x="16.51" y="6.35" smashed="yes"/>
 <element name="U1" library="SparkFun-Sensors" package="ADXL362" value="ADXL362" x="24.13" y="33.02" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="IC-11297" x="24.13" y="33.02" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
