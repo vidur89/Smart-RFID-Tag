@@ -1883,9 +1883,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="JP4" library="SparkFun-Connectors" package="1X03_LOCK" value="" x="29.845" y="20.6375" smashed="yes" rot="R270">
 <attribute name="VALUE" x="26.67" y="21.9075" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED1" library="led" package="CHIP-LED0805" value="" x="2.8575" y="23.97125" smashed="yes" rot="MR90">
-<attribute name="NAME" x="1.27" y="23.01875" size="0.8128" layer="26" font="vector" ratio="12" rot="MR180"/>
-<attribute name="VALUE" x="1.5875" y="26.51125" size="1.27" layer="28" rot="MR180"/>
+<element name="LED1" library="led" package="CHIP-LED0805" value="" x="3.01625" y="23.495" smashed="yes" rot="R270">
+<attribute name="NAME" x="1.42875" y="24.4475" size="0.8128" layer="25" font="vector" ratio="12"/>
+<attribute name="VALUE" x="1.74625" y="20.955" size="1.27" layer="27"/>
 </element>
 <element name="MCU1" library="TI_MSP430_v16" package="PW20" value="G2X[1/5]2---PW20" x="22.86" y="17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="25.30865" y="13.9549" size="0.8128" layer="25" font="vector" ratio="12" rot="R180"/>
@@ -2254,8 +2254,11 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <signal name="N$1">
 <contactref element="R3" pad="2"/>
 <contactref element="LED1" pad="A"/>
-<wire x1="1.74875" y1="20.6375" x2="1.74875" y2="23.9125" width="0.254" layer="16"/>
-<wire x1="1.74875" y1="23.9125" x2="1.8075" y2="23.97125" width="0.254" layer="16"/>
+<wire x1="1.74875" y1="20.6375" x2="1.905" y2="20.6375" width="0.254" layer="16"/>
+<wire x1="1.905" y1="20.6375" x2="1.905" y2="22.06625" width="0.254" layer="16"/>
+<via x="1.905" y="22.06625" extent="1-16" drill="0.6"/>
+<wire x1="1.905" y1="22.06625" x2="1.905" y2="23.495" width="0.254" layer="1"/>
+<wire x1="1.905" y1="23.495" x2="1.96625" y2="23.495" width="0.254" layer="1"/>
 </signal>
 <signal name="P2.3">
 <contactref element="R3" pad="1"/>
